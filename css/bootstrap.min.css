@@ -900,6 +900,11 @@ progress {
     width: 16.66667%
 }
 
+input:active {
+    background-color: red;
+    border: none;
+}
+
 .col-auto {
     flex: 0 0 auto;
     width: auto
@@ -2407,9 +2412,8 @@ progress {
 .form-control:focus {
     color: #9B9B9B;
     background-color: #fff;
-    border-color: #b2da98;
+    border-color: var(--bs-danger);
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(101, 181, 48, 0.25)
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -3467,7 +3471,7 @@ fieldset:disabled .btn {
 
 .btn-check:focus+.btn-outline-primary,
 .btn-outline-primary:focus {
-    box-shadow: 0 0 0 .25rem rgba(101, 181, 48, 0.5)
+    box-shadow: 0 0 0 .25rem var(--bs-danger)
 }
 
 .btn-check:checked+.btn-outline-primary,
@@ -4029,7 +4033,7 @@ fieldset:disabled .btn {
 .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #65B530
+    background-color: var(--bs-danger)
 }
 
 .dropdown-item.disabled,
@@ -4077,7 +4081,7 @@ fieldset:disabled .btn {
 .dropdown-menu-dark .dropdown-item.active,
 .dropdown-menu-dark .dropdown-item:active {
     color: #fff;
-    background-color: #65B530
+    background-color: var(--bs-danger)
 }
 
 .dropdown-menu-dark .dropdown-item.disabled,
@@ -5373,8 +5377,8 @@ fieldset:disabled .btn {
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #65B530;
-    border-color: #65B530
+    background-color: var(--bs-danger);
+
 }
 
 .list-group-item+.list-group-item {
@@ -5732,7 +5736,7 @@ fieldset:disabled .btn {
 
 .btn-close:focus {
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(101, 181, 48, 0.25);
+    box-shadow: 0 0 0 .25rem var(--bs-danger);
     opacity: 1
 }
 
@@ -6778,7 +6782,7 @@ fieldset:disabled .btn {
 
 .link-primary:hover,
 .link-primary:focus {
-    color: #84c459
+    color: var(--bs-danger)
 }
 
 .link-secondary {
@@ -6791,12 +6795,12 @@ fieldset:disabled .btn {
 }
 
 .link-success {
-    color: #198754
+    color: var(--bs-danger)
 }
 
 .link-success:hover,
 .link-success:focus {
-    color: #146c43
+    color: var(--bs-danger)
 }
 
 .link-info {
@@ -7199,7 +7203,7 @@ fieldset:disabled .btn {
 }
 
 .border-primary {
-    border-color: #65B530 !important
+    border-color: var(--bs-danger) !important
 }
 
 .border-secondary {
@@ -7207,7 +7211,7 @@ fieldset:disabled .btn {
 }
 
 .border-success {
-    border-color: #198754 !important
+    border-color: var(--bs-danger) !important
 }
 
 .border-info {
@@ -7970,6 +7974,13 @@ fieldset:disabled .btn {
     padding-top: 6rem;
     padding-bottom: 4rem;
 }
+
+.py-7 {
+    padding-top: 4rem;
+    padding-bottom: 7rem;
+}
+
+
 
 .pt-0 {
     padding-top: 0 !important
@@ -10615,6 +10626,10 @@ fieldset:disabled .btn {
 
     .p-lg-5 {
         padding: 3rem !important
+    }
+
+    .p-lg-6 {
+        padding: 0;
     }
 
     .px-lg-0 {
